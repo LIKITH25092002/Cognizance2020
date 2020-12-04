@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="likit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-16 04:27:49 PM"/>
+        <attribute name="created" value="bGlraXQ7TVNJOzIwMjAtMTEtMTY7MDQ6MTA6NTggUE07MjA0OQ=="/>
+        <attribute name="edited" value="bGlraXQ7TVNJOzIwMjAtMTEtMTY7MDQ6Mjc6NDkgUE07MTsyMTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NUMS, VARIABLES, LENGTH, WIDTH, AREA, PERIMETER" type="Integer" array="False" size=""/>
+            <output expression="&quot;PLEASE ENTER LENGTH&quot;" newline="True"/>
+            <input variable="LENGTH"/>
+            <output expression="&quot;PLEASE ENTER WIDTH&quot;" newline="True"/>
+            <input variable="WIDTH"/>
+            <if expression="LENGTH&gt;0">
+                <then>
+                    <if expression="WIDTH&gt;0">
+                        <then>
+                            <assign variable="AREA" expression="LENGTH*WIDTH"/>
+                            <assign variable="PERIMETER" expression="2*LENGTH*WIDTH"/>
+                            <output expression="AREA" newline="True"/>
+                            <output expression="PERIMETER" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;WIDTH MUST BE GREATER THAN ZERO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;LENGTH MUST BE GREATER THAN ZERO&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

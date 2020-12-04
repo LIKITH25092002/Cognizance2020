@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="likit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-01 10:20:16 PM"/>
+        <attribute name="created" value="bGlraXQ7TVNJOzIwMjAtMTItMDE7MDk6Mjc6MzIgUE07MjA0OQ=="/>
+        <attribute name="edited" value="bGlraXQ7TVNJOzIwMjAtMTItMDE7MTA6MjA6MTYgUE07MzsyMTQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="AREA(1)"/>
+        </body>
+    </function>
+    <function name="AREA" type="Integer" variable="AREA">
+        <parameters>
+            <parameter name="SQUARE" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="AREA" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER THE NUMBER TO FIND OUT THE VALUE&quot;" newline="True"/>
+            <input variable="SQUARE"/>
+            <assign variable="AREA" expression="SQUARE*SQUARE"/>
+            <output expression="&quot;THE AREA OF SQUARE VALUE IS &quot;&amp;AREA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

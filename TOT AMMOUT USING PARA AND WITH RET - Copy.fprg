@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="likit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-02 10:24:09 PM"/>
+        <attribute name="created" value="bGlraXQ7TVNJOzIwMjAtMTItMDE7MDg6MDI6MTggUE07MjA0NQ=="/>
+        <attribute name="edited" value="bGlraXQ7TVNJOzIwMjAtMTItMDI7MTA6MjQ6MDkgUE07MTM7MjIwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="PROVISION(1,2,3,4,5)"/>
+        </body>
+    </function>
+    <function name="PROVISION" type="Integer" variable="TOTAL">
+        <parameters>
+            <parameter name="GADJETS" type="Integer" array="False"/>
+            <parameter name="FASHION" type="Integer" array="False"/>
+            <parameter name="KITCHEN" type="Integer" array="False"/>
+            <parameter name="ACCESSORIES" type="Integer" array="False"/>
+            <parameter name="GROCERIES" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="TOTAL, TYPE, INVALID, COST, N, MOBILE, LAPTOP, PHANT, SHIRT, GASTOVE, MICROWAVE, CABLES, HEADSETS, BLUETOOTH, CHOICE, CAP, DISC" type="Integer" array="False" size=""/>
+            <output expression="&quot;WELCOME TO FLOWMART&quot;" newline="True"/>
+            <output expression="&quot;PLEASE SELECT THE CATEGORY TO PURCHASE ITEMS&#13;&#10; PRESS 1 FOR GADJETS&#13;&#10; PRESS 2 FOR FASHION&#13;&#10; PRESS 3 FOR KITCHEN&#13;&#10; PRESS 4 FOR ACCESSORIES                       &quot;" newline="True"/>
+            <input variable="TYPE"/>
+            <if expression="TYPE=1">
+                <then>
+                    <output expression="&quot;SELECT THE ITEMS YOU WANT&#13;&#10; PRESS 2 FOR IPHONE 12 PRO MOBILE &#13;&#10; PRESS 22 FOR IPAD PRO &#13;&#10; PRESS 222 FOR LAPTOP APPLE MAC BOOK PRO       &#13;&#10; PRESS 20  FOR MONITOR    &#13;&#10; PRESS 200 FOR IPOD                        &quot;" newline="True"/>
+                    <input variable="CHOICE"/>
+                    <if expression="CHOICE=2">
+                        <then>
+                            <assign variable="COST" expression="120000"/>
+                            <output expression="&quot;COST 120000&quot;" newline="True"/>
+                            <output expression="&quot;ENTER N&quot;" newline="True"/>
+                            <input variable="N"/>
+                            <assign variable="TOTAL" expression="N*120000"/>
+                            <output expression="TOTAL" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="CHOICE=22">
+                                <then>
+                                    <assign variable="COST" expression="70000"/>
+                                    <output expression="&quot;COST 1,10000&quot;" newline="True"/>
+                                    <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                    <input variable="N"/>
+                                    <assign variable="TOTAL" expression="N*110000"/>
+                                    <output expression="TOTAL" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="CHOICE=222">
+                                        <then>
+                                            <assign variable="COST" expression="235000"/>
+                                            <output expression="&quot;COST 2,35000&quot;" newline="True"/>
+                                            <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                            <input variable="N"/>
+                                            <assign variable="TOTAL" expression="N*235000"/>
+                                            <output expression="TOTAL" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="CHOICE=20">
+                                                <then>
+                                                    <assign variable="COST" expression="150000"/>
+                                                    <output expression="&quot;COST 150000&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="CHOICE=200">
+                                                        <then>
+                                                            <assign variable="COST" expression="2000"/>
+                                                            <output expression="&quot;THE COST OF IPOD IS 2000&quot;" newline="True"/>
+                                                            <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                            <input variable="N"/>
+                                                            <assign variable="TOTAL" expression="N*2000"/>
+                                                            <output expression="&quot;THE TOTAL COST OF YOUR ITEMS ARE &quot;&amp;TOTAL" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;THE OPTION YOU SELECTED IS NOT VALID&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="TYPE=2">
+                        <then>
+                            <output expression="&quot;SELECT THE ITEMS YOU WANT&#13;&#10; PRESS 3 FOR PHANT &#13;&#10; PRESS 33 FOR SHIRT  &#13;&#10; PRESS 333FOR CAP     &#13;&#10; PRESS 30 FOR T-SHIRT  &#13;&#10; PRESS 300 FOR BLAZER           &quot;" newline="True"/>
+                            <input variable="CHOICE"/>
+                            <if expression="CHOICE=3">
+                                <then>
+                                    <assign variable="COST" expression="3500"/>
+                                    <output expression="&quot;COST 3500&quot;" newline="True"/>
+                                    <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                    <input variable="N"/>
+                                    <assign variable="TOTAL" expression="N*3500"/>
+                                    <output expression="TOTAL" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="CHOICE=33">
+                                        <then>
+                                            <assign variable="COST" expression="4500"/>
+                                            <output expression="COST" newline="True"/>
+                                            <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                            <input variable="N"/>
+                                            <assign variable="TOTAL" expression="N*4500"/>
+                                            <output expression="TOTAL" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="CHOICE=333">
+                                                <then>
+                                                    <assign variable="COST" expression="500"/>
+                                                    <output expression="&quot;COST 500&quot;" newline="True"/>
+                                                    <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                    <input variable="N"/>
+                                                    <assign variable="TOTAL" expression="N*500"/>
+                                                    <output expression="TOTAL" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="CHOICE=30">
+                                                        <then>
+                                                            <assign variable="COST" expression="300"/>
+                                                            <output expression="&quot;COST 300&quot;" newline="True"/>
+                                                            <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                            <input variable="N"/>
+                                                            <assign variable="TOTAL" expression="N*300"/>
+                                                            <output expression="&quot;THE TOTAL COST OF YOUR ITEMS &quot;&amp;TOTAL" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="CHOICE=300">
+                                                                <then>
+                                                                    <assign variable="COST" expression="10500"/>
+                                                                    <output expression="&quot;THE COST OF BLAZER IS 10500&quot;" newline="True"/>
+                                                                    <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                                    <input variable="N"/>
+                                                                    <assign variable="TOTAL" expression="N*10500"/>
+                                                                    <output expression="&quot;THE TOTAL COST OF SELECTED ITEM ARE&quot;&amp;TOTAL" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;THE OPTION YOU SELECTED IS NOT VALID &quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="TYPE=3">
+                                <then>
+                                    <output expression="&quot;SELECT THE ITEMS YOU WANT&#13;&#10; PRESS 4 FOR GASTOVE&#13;&#10; PRESS 44 FOR MICROWAVE&#13;&#10; PRESS 444FOR DINING SET&#13;&#10; PRESS 40 FOR CHIMNEY&#13;&#10; PRESS 400 FOR PAN   &quot;" newline="True"/>
+                                    <input variable="CHOICE"/>
+                                    <if expression="CHOICE=4">
+                                        <then>
+                                            <assign variable="COST" expression="6000"/>
+                                            <output expression="&quot;COST 6000&quot;" newline="True"/>
+                                            <output expression="&quot;THE GASATOVE IS LIMITED EDITION YOU CAN SELECT ONLY ONE&quot;" newline="True"/>
+                                            <output expression="&quot;ENTER 1 FOR PURCHASE &#13;&#10; ENTER 2 FOR DECLINE THE PURCHASE&quot;" newline="True"/>
+                                            <input variable="N"/>
+                                            <if expression="N=1">
+                                                <then>
+                                                    <output expression="&quot;THE COST OF GASTOVE IS 6000&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;SORRY WE HAVE OUT OF STOCK,PLEASE TRY AGAIN&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="CHOICE=44">
+                                                <then>
+                                                    <assign variable="COST" expression="25000"/>
+                                                    <output expression="&quot;COST 25000&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="CHOICE=444">
+                                                        <then>
+                                                            <assign variable="COST" expression="10000"/>
+                                                            <output expression="&quot;COST 10000&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="CHOICE=40">
+                                                                <then>
+                                                                    <assign variable="COST" expression="15000"/>
+                                                                    <output expression="&quot;THE TOTAL COST  OF CHIMNEY IS 15000&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="CHOICE=400">
+                                                                        <then>
+                                                                            <output expression="&quot;CHOOSE THE PAN DIAMETER SIZE&#13;&#10; PRESS 1 FOR 30 CM&#13;&#10; PRESS 2 FOR 28 CM             &quot;" newline="True"/>
+                                                                            <input variable="CHOICE"/>
+                                                                            <if expression="CHOICE=1">
+                                                                                <then>
+                                                                                    <assign variable="COST" expression="800"/>
+                                                                                    <output expression="&quot;THE COST OF PAN(30 CM)&quot;" newline="True"/>
+                                                                                    <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                                                    <input variable="N"/>
+                                                                                    <assign variable="TOTAL" expression="N*800"/>
+                                                                                    <output expression="&quot;THE COST OF PAN IS &quot;&amp;TOTAL" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="CHOICE=2">
+                                                                                        <then>
+                                                                                            <assign variable="COST" expression="600"/>
+                                                                                            <output expression="&quot;THE COST OF PAN (28 CM) IS )600&quot;" newline="True"/>
+                                                                                            <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                                                            <input variable="N"/>
+                                                                                            <assign variable="TOTAL" expression="N*600"/>
+                                                                                            <output expression="&quot;THE COST OF PAN IS &quot;&amp;TOTAL" newline="True"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <output expression="&quot;THE SIZE DOESNT THERE&quot;" newline="True"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;THE OPTION YOU SELECTED IS INVALID&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="TYPE=4">
+                                        <then>
+                                            <output expression="&quot;SELECT THE ITEMS YOU WANT&#13;&#10; PRESS 5 FOR POWER CABLE&#13;&#10; PRESS 55 FOR HEADSET&#13;&#10; PRESS 555FOR BLUETOOTH RECEVIER&#13;&#10; PRESS 50 FOR LAPTOP CHARGER&#13;&#10; PRESS 500 FOR MOBILE BACK COVER    &quot;" newline="True"/>
+                                            <input variable="CHOICE"/>
+                                            <if expression="CHOICE=5">
+                                                <then>
+                                                    <assign variable="COST" expression="700"/>
+                                                    <output expression="&quot;COST 700&quot;" newline="True"/>
+                                                    <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                    <input variable="N"/>
+                                                    <assign variable="TOTAL" expression="N*700"/>
+                                                    <output expression="TOTAL" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="CHOICE=55">
+                                                        <then>
+                                                            <assign variable="COST" expression="1500"/>
+                                                            <output expression="&quot;THE COST OF HEADSET IS 1500&quot;" newline="True"/>
+                                                            <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                            <input variable="N"/>
+                                                            <assign variable="TOTAL" expression="N*1500"/>
+                                                            <output expression="&quot;THE TOTAL COST OF SELECTED ITEMS ARE&quot;&amp;TOTAL" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="CHOICE=555">
+                                                                <then>
+                                                                    <assign variable="COST" expression="350"/>
+                                                                    <output expression="&quot;THE COST OF BLUETOOTH RECEVIER IS 350 &quot;" newline="True"/>
+                                                                    <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                                    <input variable="N"/>
+                                                                    <assign variable="TOTAL" expression="N*350"/>
+                                                                    <output expression="&quot;THE COST OF YOUR SELECTED ITEMS ARE&quot;&amp;TOTAL" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="CHOICE=50">
+                                                                        <then>
+                                                                            <assign variable="COST" expression="3000"/>
+                                                                            <output expression="&quot;THE COST OF LAPTOP CHARGER IS 3000&quot;" newline="True"/>
+                                                                            <output expression="&quot;ENTER N&quot;" newline="True"/>
+                                                                            <input variable="N"/>
+                                                                            <assign variable="TOTAL" expression="N*3000"/>
+                                                                            <output expression="&quot;THE COST YOUR SELECTED ITEMS IS &quot;&amp;TOTAL" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="CHOICE=500">
+                                                                                <then>
+                                                                                    <assign variable="CHOICE" expression="250"/>
+                                                                                    <output expression="&quot;THE COST MOBILE BACK COVER IS 250&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;THE OPTIONS YOU ENTREDD IS INVALID&quot;" newline="True"/>
+                                                                                    <output expression="&quot;PLEASE CHECK IT AGAIN&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="TYPE=5">
+                                                <then>
+                                                    <output expression="&quot;PLEASE SELECT THE GROCERIES YOU WISH&#13;&#10; PRESS 6FOR TOMATO&#13;&#10; PRESS 66 FOR ONION&#13;&#10; PRESS 666FOR CAPSICUM&#13;&#10; PRESS 60 FOR BRINJAL&#13;&#10; PRESS 600 FOR LADYS FINGER              &quot;" newline="True"/>
+                                                    <input variable="CHOICE"/>
+                                                    <if expression="CHOICE=6">
+                                                        <then>
+                                                            <assign variable="COST" expression="25"/>
+                                                            <output expression="&quot;THE COST OF 1 KG TOMATO IS 25&quot;" newline="True"/>
+                                                            <output expression="&quot;PLEASE ENTER HOW MANY KGS YOU WOULD LIKE TO HAVE&quot;" newline="True"/>
+                                                            <input variable="N"/>
+                                                            <assign variable="TOTAL" expression="N*25"/>
+                                                            <output expression="&quot;THE TOTAL COST OF TOMATO IS &quot;&amp;TOTAL" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="CHOICE=66">
+                                                                <then>
+                                                                    <assign variable="COST" expression="70"/>
+                                                                    <output expression="&quot;THE COST OF 1 KG ONION IS 70&quot;" newline="True"/>
+                                                                    <output expression="&quot;PLEASE ENTER HOW MANY KGS WOULD YOU LIKE TO HAVE&quot;" newline="True"/>
+                                                                    <input variable="N"/>
+                                                                    <assign variable="TOTAL" expression="N*70"/>
+                                                                    <output expression="&quot;THE TOTAL COST OF ONIONS ARE &quot;&amp;TOTAL" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="CHOICE=666">
+                                                                        <then>
+                                                                            <assign variable="COST" expression="100"/>
+                                                                            <output expression="&quot;THE COST OF 1 KG CAPSICUM IS 100&quot;" newline="True"/>
+                                                                            <output expression="&quot;PLEASE ENTER HOW MANY KGS WOULD YOU LIKE TO HAVE&quot;" newline="True"/>
+                                                                            <input variable="N"/>
+                                                                            <assign variable="TOTAL" expression="N*100"/>
+                                                                            <output expression="&quot;THE COST OF CAPSICUM IS &quot;&amp;TOTAL" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="CHOICE=60">
+                                                                                <then>
+                                                                                    <assign variable="COST" expression="50"/>
+                                                                                    <output expression="&quot;THE COST OF 1 KG BRINJAL IS 50&quot;" newline="True"/>
+                                                                                    <output expression="&quot;PLEASE ENTER HOW MANY KGS WOULD YOU LIKE TO HAVE&quot;" newline="True"/>
+                                                                                    <input variable="N"/>
+                                                                                    <assign variable="TOTAL" expression="N*50"/>
+                                                                                    <output expression="&quot;THE COST OF BRINJAL IS &quot;&amp;TOTAL" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="CHOICE=600">
+                                                                                        <then>
+                                                                                            <assign variable="COST" expression="60"/>
+                                                                                            <output expression="&quot;THE COST OF 1 KG LADYS FINGER IS 60&quot;" newline="True"/>
+                                                                                            <output expression="&quot;PLEASE ENTER HOW MANY KGS WOULD YOU LIKE TO HAVE&quot;" newline="True"/>
+                                                                                            <input variable="N"/>
+                                                                                            <assign variable="TOTAL" expression="N*60"/>
+                                                                                            <output expression="&quot;THE COST OF LADYS FINGER IS &quot;&amp;TOTAL" newline="True"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <output expression="&quot;PLEASE SELECT THE VALID OPTION&quot;" newline="True"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <breakpoint/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;PLEASE ENTER THE MODE OF TRANSACTION&#13;&#10; PRESS 1 FOR CASH&#13;&#10; PRESS 2 FOR CARD                     &quot;" newline="True"/>
+            <input variable="CHOICE"/>
+            <if expression="CHOICE=1">
+                <then>
+                    <output expression="&quot;PAYING  BY CASH &quot;" newline="True"/>
+                    <output expression="&quot;THE TOTAL COST BY PAYING CASH&quot;&amp;TOTAL" newline="True"/>
+                </then>
+                <else>
+                    <if expression="CHOICE=2">
+                        <then>
+                            <output expression="&quot; WE HAVE DISCOUNTS ON SPECIFIC CARDS &#13;&#10;  SBI&#13;&#10;  AXIS&#13;&#10;  HDFC&#13;&#10; DEBIT AND CREDIT CARDS                 &quot;" newline="True"/>
+                            <output expression="&quot;IF YOU HAVE ANY ONE OF THOSE CARDS &#13;&#10; PRESS 1 TO CONTINUE&#13;&#10; PRESS 2 FOR ANOTHER CARDS &quot;" newline="True"/>
+                            <input variable="CHOICE"/>
+                            <if expression="CHOICE=1">
+                                <then>
+                                    <output expression="&quot;ENTER CARD DETAILS &quot;" newline="True"/>
+                                    <input variable="N"/>
+                                    <assign variable="DISC" expression="TOTAL*0.25"/>
+                                    <output expression="&quot;THE TOTAL COST INCLUDING DISCOUNT &quot;&amp;DISC" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;THANKS FOR SHOPPING HAVE A NICE DAY&quot;" newline="True"/>
+            <output expression="&quot;HOPE OUR SERVICES SATISFY YOU&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
