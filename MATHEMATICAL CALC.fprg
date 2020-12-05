@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="amarm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-02 04:08:09 PM"/>
+        <attribute name="created" value="YW1hcm07TEFQVE9QLUJBUzVUUUFMOzIwMjAtMTEtMDI7MDI6NDU6NTUgUE07Mjg4MQ=="/>
+        <attribute name="edited" value="YW1hcm07TEFQVE9QLUJBUzVUUUFMOzIwMjAtMTEtMDI7MDQ6MDg6MDkgUE07MzsyOTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, choice" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter required choice   &#13;&#10;   1 for ADDITION.&#13;&#10;   2 for SUBTRACTION.&#13;&#10;   3 for MULTIPLICATION.&#13;&#10;   4 for DIVISION.        &quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice==1">
+                <then>
+                    <output expression="a+b &amp; &quot; is the value after addition&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="choice==2">
+                        <then>
+                            <if expression="a&gt;b">
+                                <then>
+                                    <output expression="a-b &amp; &quot; is the value after subtraction&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="b-a &amp; &quot; is the value after subtraction&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="choice==3">
+                                <then>
+                                    <output expression="a*b &amp; &quot; is the value after multiplication&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="choice==4">
+                                        <then>
+                                            <output expression="a/b &amp; &quot; is the value after division&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Please enter valid respnse see the above table&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
