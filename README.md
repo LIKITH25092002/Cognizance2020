@@ -67,6 +67,7 @@ ___
 - **When a program calls the function,the program control is transferred to  the called function**
 - **A called function performs a defined task and when its return statement is executed or when its function ending closing brace is reached**
 - **It return the program control back to the main program.**
+- **To call a function ,you simply needd to pass the required parameters**
 
 
 
