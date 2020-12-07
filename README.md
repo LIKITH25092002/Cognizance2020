@@ -70,7 +70,7 @@ ___
 - **To call a function ,you simply needd to pass the required parameters**
 - **Along the function name and its function returns a value**
 - **Then you can store the returned value**
-
+- **If a function is use arguments,it must declare a variable that accept the values**
 
 
    
