@@ -69,6 +69,7 @@ ___
 - **It return the program control back to the main program.**
 - **To call a function ,you simply needd to pass the required parameters**
 - **Along the function name and its function returns a value**
+- **Then you can store the returned value**
 
 
 
