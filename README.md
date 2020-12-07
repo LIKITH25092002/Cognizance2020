@@ -71,6 +71,7 @@ ___
 - **Along the function name and its function returns a value**
 - **Then you can store the returned value**
 - **If a function is use arguments,it must declare a variable that accept the values**
+- **These varaibles are called formal parmeters of the function**
 
 
    
